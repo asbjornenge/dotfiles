@@ -57,6 +57,8 @@ preexec() {
 
 precmd() {
 	vcs_info
+	# Escape sequence for Terminal.app to pick up current dir
+	print -Pn "\e]2; %~/ \a"
 	# Add `%*` to display the time
 	print -P '\n%F{blue}%~%F{236}$vcs_info_msg_0_`git_dirty` $username%f %F{yellow}`cmd_exec_time`%f'
 	# Reset value since `preexec` isn't always triggered
