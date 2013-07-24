@@ -1,0 +1,13 @@
+[user]
+	name = Asbjørn Enge
+	email = asbjorn@hanafjedle.net
+[core]
+	autocrlf = false
+	mergeoptions = --no-ff --no-commit
+[alias]
+	st = status
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
