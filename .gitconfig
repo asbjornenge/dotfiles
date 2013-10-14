@@ -2,35 +2,17 @@
 	name = Asbjørn Enge
 	email = asbjorn@hanafjedle.net
 [core]
-	excludesfile = /Users/asbjorn/.gitignore_global
 	autocrlf = false
 	mergeoptions = --no-ff --no-commit
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [alias]
 	st = status
-	ksreview = "!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"
+  aa = add --all
+  l  = log
+  c  = commit 
 [color]
 	branch = auto
 	diff = auto
 	interactive = auto
 	status = auto
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-	tool = Kaleidoscope
-[difftool]
-	prompt = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool]
-	prompt = false
-[merge]
-	tool = Kaleidoscope
-[init]
-	templatedir = ~/.git_template
+[push]
+	default = simple
