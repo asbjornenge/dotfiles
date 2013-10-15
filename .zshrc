@@ -9,4 +9,5 @@ source ~/.zsh/functions.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/zsh_hooks.zsh
 source ~/.zsh/hitch.zsh
-source ${HOME}/dotfiles/z.sh
+source ~/.zsh/alias.zsh
+source ${HOME}/.dotfiles/z.sh

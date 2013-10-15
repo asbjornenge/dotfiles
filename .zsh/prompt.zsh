@@ -6,6 +6,7 @@
 
 # Change this to your own username
 DEFAULT_USERNAME='asbjorn'
+DEFAULT_HOSTNAME='Asbjrns-MacBook-Pro.local'
 
 # Threshold (sec) for showing cmd exec time
 CMD_MAX_EXEC_TIME=5
@@ -32,8 +33,9 @@ zstyle ':vcs_info:git*' actionformats ' %b|%a'
 # enable prompt substitution
 setopt PROMPT_SUBST
 
-# Only show username if not default
-[ $USER != $DEFAULT_USERNAME ] && local username='%n@%m '
+# Only show username & hostname if not default
+[ $USER != $DEFAULT_USERNAME ] && local username='%n '
+[ $HOST != $DEFAULT_HOSTNAME ] && local hostname='@%m '
 
 # Fastest possible way to check if repo is dirty
 git_dirty() {
@@ -60,7 +62,7 @@ precmd() {
 	# Escape sequence for Terminal.app to pick up current dir
 	print -Pn "\e]2; %~/ \a"
 	# Add `%*` to display the time
-	print -P '\n%F{blue}%~%F{236}$vcs_info_msg_0_`git_dirty` $username%f %F{yellow}`cmd_exec_time`%f'
+	print -P '\n%F{blue}%~%F{236}$vcs_info_msg_0_`git_dirty` $username$hostname%f %F{yellow}`cmd_exec_time`%f'
 	# Reset value since `preexec` isn't always triggered
 	unset cmd_timestamp
 }
