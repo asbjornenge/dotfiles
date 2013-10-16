@@ -25,3 +25,7 @@ export NODE_PATH=/opt/boxen/homebrew/lib/node_modules
 export PYTHONPATH=/usr/local/lib/python2.6/site-packages
 # CTAGS Sorting in VIM/Emacs is better behaved with this in place
 export LC_COLLATE=C
+
+# Locales
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
