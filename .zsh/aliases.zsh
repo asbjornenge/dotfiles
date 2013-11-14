@@ -11,5 +11,7 @@ alias be='bundle exec'
 alias bx='bundle exec'
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 alias gentags='ctags .'
-alias docker='sudo docker'
 alias g='git'
+# Docker
+#alias docker='sudo docker'
+alias dl='docker ps -l -q'
