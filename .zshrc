@@ -9,4 +9,8 @@ source ~/.zsh/functions.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/zsh_hooks.zsh
 source ~/.zsh/hitch.zsh
-source ${HOME}/.dotfiles/z.sh
+## Use z.sh optionally from .zshrc_custom
+#source ${HOME}/.dotfiles/z.sh
+if [[ -f ~/.zshrc_custom ]]; then
+  source ~/.zshrc_custom
+fi
