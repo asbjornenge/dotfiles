@@ -34,8 +34,8 @@ zstyle ':vcs_info:git*' actionformats ' %b|%a'
 setopt PROMPT_SUBST
 
 # Only show username & hostname if not default
-[ $USER != $DEFAULT_USERNAME ] && local username='%n '
-[ $HOST != $DEFAULT_HOSTNAME ] && local hostname='@%m '
+[ $USER!=$DEFAULT_USERNAME ] && local username='%n '
+[ $HOST!=$DEFAULT_HOSTNAME ] && local hostname='@%m '
 
 # Fastest possible way to check if repo is dirty
 git_dirty() {
