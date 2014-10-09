@@ -30,7 +30,18 @@ filetype plugin indent on    " required
 syntax on
 " set nu
 " let g:airline_powerline_fonts = 1
-
+" Spaces > tabs - always 4
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+" No silly auto indent
+set nocindent
+set nosmartindent
+set noautoindent
+set indentexpr=
+filetype indent off
+filetype plugin indent off
 " Highlight searches
 set hlsearch
 " Ignore case of searches
