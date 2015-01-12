@@ -6,6 +6,7 @@
 	mergeoptions = --no-ff --no-commit
 [alias]
 	st = status
+    aa = add --all
 [color]
 	branch = auto
 	diff = auto
