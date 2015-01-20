@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium-browser --app="https://curlhat.slack.com"

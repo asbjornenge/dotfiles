@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+echo 'test'
+
+# if multiple monitors
+#
+# synclient AccelFactor=0.010
+#

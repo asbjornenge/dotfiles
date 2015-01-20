@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+xrandr --output eDP1 --mode 1680x1050
+# if @ home
+#
+#  xrandr --output eDP1 --pos 1280x1080
+#
