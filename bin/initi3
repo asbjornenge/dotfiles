@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 set-resolution
 set-wallpaper
+set-touchpad

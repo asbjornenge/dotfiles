@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-echo 'test'
+if [ "$(num-connected-screens)" -gt "1" ]; then
+    synclient AccelFactor=0.010
+fi
 
-# if multiple monitors
-#
-# synclient AccelFactor=0.010
-#
