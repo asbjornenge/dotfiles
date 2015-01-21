@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+cat /etc/X11/xorg.conf.d/50-synaptics-clickpad.conf | grep Option | awk '{print "synclient",$2,$3}' | sed -e 's/"//g' | sed -e 's/ /=/g' | sed -s 's/synclient=/synclient /g'
