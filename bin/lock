@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/srv/asbjornenge/i3lock/i3lock -i /home/asbjorn/Pictures/Wallpapers/Vermillionlakestars_2560x1600.png -t
