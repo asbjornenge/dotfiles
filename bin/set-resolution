@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 xrandr --output eDP1 --mode 2560x1600
 if [ "$(num-connected-screens)" -eq "3" ]; then
-    xrandr --output HDMI1 --mode 1920x1200
-    xrandr --output HDMI2 --mode 1920x1200
-    xrandr --output HDMI3 --mode 1920x1200
-    xrandr --output HDMI3 --left-of HDMI1
-    xrandr --output HDMI2 --left-of HDMI1
+    xrandr --output HDMI1 --mode 1920x1200 --scale 1.5x1.5 --fb 2880x1800 --pos 2880x0
+    xrandr --output HDMI2 --mode 1920x1200 --scale 1.5x1.5 --fb 2880x1800 --pos 0x0
     sleep 5
-    xrandr --output eDP1 --pos 1080x1280
+    xrandr --output eDP1 --pos 1440x1800
 fi
 if [ "$(num-connected-screens)" -eq "2" ]; then
     xrandr --output HDMI1 --mode 1920x1080
