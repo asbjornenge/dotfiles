@@ -1,0 +1,31 @@
+// based on a keyboard map from an 'xkb/symbols/no' file
+
+default  partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    // Describes the differences between a very simple en_US
+    // keyboard and a Norwegian keyboard with dead key support
+    // and all of ISO-8859-1 characters available.
+
+    include "latin(type4)"
+
+    name[Group1]="Norwegian";
+
+    key <TLDE>  { [     apostrophe,    section     ]  };
+    key <AE03>  { [         3, numbersign,     sterling,     sterling ] };
+    key <AE04>  { [         4,   dollar,       dollar,       dollar ] };
+    key <AE06>  { [         6,  ampersand, threequarters, fiveeighths ] };
+    key <AE07>  { [         7,      slash,          bar,    backslash ] };
+    key <AE08>  { [         8,  parenleft,  bracketleft,    braceleft ] };
+    key <AE09>  { [         9, parenright, bracketright,   braceright ] };
+    key <AC10>  { [    oslash,   Ooblique,   odiaeresis,   Odiaeresis ] };
+    key <AE11>  { [      plus,   question     ] };
+    key <AC11>  { [        ae,         AE     ] };
+    key <AD11>  { [     aring,      Aring     ] };
+    key <AE12>  { [ dead_grave, dead_acute,       acute,  dead_ogonek ] };
+    key <AD12>  { [ diaeresis, asciicircum,  asciitilde,  dead_macron ] };
+    key <BKSL>  { [        at,   asterisk     ] };
+
+    include "level3(ralt_switch)"
+};
+
