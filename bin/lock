@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
-/srv/asbjornenge/i3lock/i3lock -i /home/asbjorn/Pictures/Wallpapers/Vermillionlakestars_2560x1600.png -t
+if [ "$(num-connected-screens)" -eq "3" ]; then
+  /srv/asbjornenge/i3lock/i3lock -i /home/asbjorn/Pictures/Wallpapers/Vermillionlakestars_huge.png -t
+else
+  /srv/asbjornenge/i3lock/i3lock -i /home/asbjorn/Pictures/Wallpapers/Vermillionlakestars_2560x1600.png -t
+fi
