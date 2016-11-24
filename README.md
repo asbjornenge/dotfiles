@@ -14,7 +14,9 @@ Install the keymap:
 
 Set the keymap (automated in `fish/config/config.fish`):
 
-`setxkbmap -layout yolo`
+`setxkbmap -layout yolo -option`
+
+NOTE: The `-option` argument removes any options added by other obscure actors.
 
 To reload changes to the mapping:
 
