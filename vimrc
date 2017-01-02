@@ -12,6 +12,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lineup--A-simple-text-aligner'
 Plugin 'scrooloose/nerdtree'
+Plugin 'moll/vim-node'
+Plugin 'nylen/vim-node-require-helper'
+Plugin 'trotzig/import-js'
+Plugin 'vim-stylus'
+Plugin 'vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -32,9 +37,9 @@ syntax on
 " set nu
 " let g:airline_powerline_fonts = 1
 " Spaces > tabs - always 4
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 " No silly auto indent
 set nocindent
@@ -117,3 +122,5 @@ endif
 let g:ctrlp_reuse_window  = 'startify'
 " Set 256 color mode
 set t_Co=256
+colorscheme onedark
+let g:jsx_ext_required = 0
