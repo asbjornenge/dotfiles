@@ -1,14 +1,14 @@
 [user]
-	name = Asbjørn Enge
-	email = asbjorn@hanafjedle.net
+  name = Asbjørn Enge
+  email = asbjorn@hanafjedle.net
 [core]
-	autocrlf = false
-	mergeoptions = --no-ff --no-commit
+  autocrlf = false
+  mergeoptions = --no-ff --no-commit
 [alias]
-	st = status
-    aa = add --all
+  st = status
+  aa = add --all
 [color]
-	branch = auto
-	diff = auto
-	interactive = auto
-	status = auto
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto

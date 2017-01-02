@@ -122,5 +122,4 @@ endif
 let g:ctrlp_reuse_window  = 'startify'
 " Set 256 color mode
 set t_Co=256
-colorscheme onedark
 let g:jsx_ext_required = 0
