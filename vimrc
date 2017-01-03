@@ -7,7 +7,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lineup--A-simple-text-aligner'
@@ -15,8 +16,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'moll/vim-node'
 Plugin 'nylen/vim-node-require-helper'
 Plugin 'trotzig/import-js'
-Plugin 'vim-stylus'
-Plugin 'vim-jsx'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,8 +36,10 @@ filetype plugin indent on    " required
 "
 syntax on
 " set nu
-" let g:airline_powerline_fonts = 1
-" Spaces > tabs - always 4
+"let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+" Fancy airline requires powerline-fonts -> https://github.com/powerline/fonts
+let g:airline_theme='papercolor'
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
